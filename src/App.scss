@@ -1,0 +1,32 @@
+.App {
+  max-width: 2002px;
+  min-height: 900px;
+  margin: 230px auto;
+  background: #F3F3F3;
+  text-align: center;
+  position: relative;
+  .Nav{
+    position: absolute;
+    top: -100px;
+    left: 0;
+    right: 0;
+    z-index: 10;
+    a{
+      list-style: none;
+      font-size: 30px;
+      padding: 30px;
+      color: black;
+      border: 2px dotted #000000;
+      margin-right: 30px;
+      z-index: 10;
+      &:hover{
+        background: #A6FFFF;
+        transform: scale(1.2);
+      }
+    }
+
+  }
+
+
+
+}

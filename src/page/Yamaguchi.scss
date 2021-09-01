@@ -1,0 +1,189 @@
+$mainColor: #FFFFFF;
+
+
+.Yamaguchi-content{
+  max-width: 2002px;
+  min-height: 900px;
+  display: flex;
+  justify-content: space-between;
+  background: url(../img/bg.png) no-repeat center center #181818;
+  @media screen and (min-width: 375px) and (max-width: 1200px) {
+    max-width: 2002px;
+    flex-direction: column;
+    background: #181818;
+
+  }
+
+  .Yamaguchi-interface{
+    width: 100%;
+
+    .Yamaguchi-interface__img{
+      @media screen and (min-width: 375px) and (max-width: 576px) {
+        max-width: 100%;
+
+      }
+    }
+  }
+
+  .Yamaguchi-text{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    margin: 73px 0 86px 100px;
+    @media screen and (min-width: 375px) and (max-width: 576px) {
+      padding: 16px;
+      align-items: center;
+      text-align: left;
+    }
+
+    .Yamaguchi__title{
+      font-family: Montserrat, sans-serif;
+      font-weight: 300;
+      font-size: 56px;
+      color: $mainColor;
+      @media screen and (min-width: 375px) and (max-width: 576px) {
+        font-size: 34px;
+      }
+    }
+
+    .Yamaguchi__desc{
+      font-family: Montserrat, sans-serif;
+      width: 500px;
+      font-weight: 300;
+      font-size: 22px;
+      line-height: 170%;
+      color: $mainColor;
+      margin-top: 60px;
+      margin-bottom: 50px;
+      @media screen and (min-width: 375px) and (max-width: 576px) {
+        font-size: 16px;
+        width: 100%;
+      }
+    }
+
+    .Yamaguchi__say{
+      text-transform: uppercase;
+      font-family: Montserrat, sans-serif;
+      font-weight: 900;
+      font-size: 45px;
+      color: $mainColor;
+      @media screen and (min-width: 375px) and (max-width: 576px) {
+        display: none;
+      }
+    }
+
+    .Yamaguchi__say-ok{
+      text-transform: uppercase;
+      font-family: Montserrat, sans-serif;
+      font-weight: 900;
+      font-size: 61px;
+      color: $mainColor;
+      margin-left: 59px;
+      @media screen and (min-width: 375px) and (max-width: 576px) {
+        display: none;
+      }
+    }
+  }
+
+  .Yamaguchi-img{
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+
+    .Yamaguchi-animate {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+      overflow: hidden;
+
+      .anima {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        .Yamaguchi__img-women {
+          opacity: 0;
+          animation: women-animate infinite 3s linear, women-translate 1 4s linear;
+          animation-delay: 3s;
+        }
+      }
+
+      .Yamaguchi__ellipse {
+
+        width: 193.78px;
+        height: 61.14px;
+        transform: scale(0.5);
+        background: #000000;
+        border-radius: 50%;
+        animation: loadpage 1 9s linear;
+      }
+    }
+  }
+
+  .Yamaguchi-text-media{
+    display: none;
+    @media screen and (min-width: 375px) and (max-width: 576px) {
+      display: flex;
+      flex-direction: column;
+      .Yamaguchi__say{
+        text-transform: uppercase;
+        font-family: Montserrat, sans-serif;
+        font-weight: 900;
+        font-size: 39px;
+        color: $mainColor;
+      }
+
+      .Yamaguchi__say-ok{
+        text-transform: uppercase;
+        font-family: Montserrat, sans-serif;
+        font-weight: 900;
+        font-size: 50px;
+        color: $mainColor;
+      }
+    }
+  }
+}
+
+@keyframes women-translate {
+  0%{
+    transform: translateY(800px);
+    opacity: 0;
+  }
+  100%{
+    transform: translateY(0);
+    opacity: 1;
+  }
+
+}
+@keyframes loadpage{
+  0%{
+    transform: scale(0.5);
+  }
+  50%{
+    transform: scale(1);
+  }
+  100%{
+    transform: scale(0.5);
+
+  }
+}
+
+
+@keyframes women-animate {
+  0%{
+    transform: translateY(0);
+    opacity: 1;
+  }
+  50%{
+    transform: translateY(15px);
+    opacity: 1;
+  }
+  100%{
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}

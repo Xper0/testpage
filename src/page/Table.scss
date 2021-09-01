@@ -1,0 +1,143 @@
+.App{
+
+
+.Content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1920px;
+  min-height: 900px;
+  @media screen and (min-width: 375px) and (max-width: 576px) {
+    padding: 13px 17px 15px 12px;
+  }
+
+    .Content-img {
+      width: 50%;
+      height: 100%;
+      position: relative;
+      @media screen and (min-width: 375px) and (max-width: 576px) {
+      display: none;
+      width: 100%;
+    }
+
+    .Content-body{
+      position: absolute;
+      right: -251px;
+      top: -475px;
+      .Content__img-uptable {
+        position: absolute;
+        top: 0;
+        z-index: 1;
+      }
+
+      .Content__img-downtable {
+        position: relative;
+      }
+    }
+    .Content-control{
+      position: absolute;
+      bottom: 200px;
+      right: 435px;
+      z-index: 13;
+
+      .Content__btn {
+        margin-right: 74px;
+        width: 200.22px;
+        height: 200.22px;
+        background: #A6FFFF;
+        font-family: Ubuntu, sans-serif;
+        font-weight: 300;
+        font-size: 40.1944px;
+        border-radius: 50%;
+        border: none;
+        color: #000000;
+        @media screen and (min-width: 375px) and (max-width: 576px) {
+          margin-right: 22px;
+        }
+        &:hover {
+          background: #A6FFFF;
+          transform: scale(1.1);
+          cursor: pointer;
+        }
+      }
+    }
+  }
+  .active{
+    display: none;
+    @media screen and (min-width: 375px) and (max-width: 576px) {
+      display: inline-block;
+      position: relative;
+      .Content-body{
+        position: relative;
+        right: 0;
+        top: 0;
+        .Content__img-uptable {
+          position: absolute;
+          top: 0;
+          z-index: 1;
+          max-width: 100%;
+        }
+        .Content__img-downtable {
+          z-index: 5;
+          max-width: 100%;
+        }
+        .Content-control{
+          position: absolute;
+          @media screen and (min-width: 530px) and (max-width: 576px) {
+            right: 170px;
+            bottom: 100px;
+          }
+          @media screen and (min-width: 411px) and (max-width: 529px) {
+            right: 105px;
+            bottom: 65px;
+          }
+          @media screen and (min-width: 375px) and (max-width: 410px) {
+            right: 95px;
+            bottom: 45px;
+          }
+        }
+        .Content__btn{
+          max-width: 50px;
+          height: 50px;
+          font-size: 12px;
+        }
+      }
+      }
+    }
+
+  .Content-text {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    margin-bottom: 40px;
+    flex: 1;
+    @media screen and (min-width: 375px) and (max-width: 576px) {
+      width: 100%;
+    }
+    .Content__title{
+      font-family: Ubuntu, sans-serif;
+      font-weight: 300;
+      font-size: 62px;
+      color: #0B64FE;
+      margin-bottom: 68px;
+      margin-top: 26px;
+      max-width: 500px;
+      @media screen and (min-width: 375px) and (max-width: 576px) {
+        font-size: 38px;
+      }
+    }
+    .Content__desc{
+      font-family: Ubuntu, sans-serif;
+      font-style: normal;
+      font-weight: 300;
+      font-size: 22px;
+      line-height: 170%;
+      color: #181818;
+      max-width: 500px;
+      @media screen and (min-width: 375px) and (max-width: 576px) {
+        font-size: 16px;
+      }
+    }
+  }
+}
+}
