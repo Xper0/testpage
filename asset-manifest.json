@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/testpage/static/css/main.b2ce040b.chunk.css",
+    "main.js": "/testpage/static/js/main.05094278.chunk.js",
+    "main.js.map": "/testpage/static/js/main.05094278.chunk.js.map",
+    "runtime-main.js": "/testpage/static/js/runtime-main.0950012e.js",
+    "runtime-main.js.map": "/testpage/static/js/runtime-main.0950012e.js.map",
+    "static/js/2.64f3aa9b.chunk.js": "/testpage/static/js/2.64f3aa9b.chunk.js",
+    "static/js/2.64f3aa9b.chunk.js.map": "/testpage/static/js/2.64f3aa9b.chunk.js.map",
+    "static/js/3.956d8646.chunk.js": "/testpage/static/js/3.956d8646.chunk.js",
+    "static/js/3.956d8646.chunk.js.map": "/testpage/static/js/3.956d8646.chunk.js.map",
+    "index.html": "/testpage/index.html",
+    "static/css/main.b2ce040b.chunk.css.map": "/testpage/static/css/main.b2ce040b.chunk.css.map",
+    "static/js/2.64f3aa9b.chunk.js.LICENSE.txt": "/testpage/static/js/2.64f3aa9b.chunk.js.LICENSE.txt",
+    "static/media/Yamaguchi.scss": "/testpage/static/media/bg.d6de6259.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.0950012e.js",
+    "static/js/2.64f3aa9b.chunk.js",
+    "static/css/main.b2ce040b.chunk.css",
+    "static/js/main.05094278.chunk.js"
+  ]
+}
